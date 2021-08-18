@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding:0}
+
+        div.box{
+        background: skyblue
+        ;}
+        div.box1{width: 200px;height: 200px;
+        background: red
+        ;}
+        div.box2{width: 200px;height: 200px;
+        background: green
+        ;}
+        div.box:after{content:""'clear:both'display:block}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box clearfix">
+    <div class="box1">left</div>   
+    <div class="box2">rigth</div>
+    </div>
+</body>
+</html>

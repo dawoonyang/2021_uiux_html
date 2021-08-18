@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+
+        /* header */
+        header#header{width: 1000px;
+            background-color: #0ff;
+            margin: 0 auto;
+            margin-bottom: 0px;}
+
+        header#header>h1{width: 100px;height: 100px;
+            background-color: #ccc;
+            margin: 0 auto;
+            line-height: 10px;}
+
+        header#header>h1>a{
+            display: block;text-align: center;
+            line-height: 100px;
+    }
+
+        header#header>nav.gnb{}
+        header#header>nav.gnb>ul>li{
+            float: left;width: 20%;
+        /* background-color: #f00; */
+    }
+        /* header#header>nav.gnb>ul>li>:hover{
+            background-color: #00f;} */
+        header#header>nav.gnb>ul>li>a{display: block;text-align: center;
+            line-height: 40px;
+            color:white;background-color: #f00;}
+        header#header>nav.gnb>ul>li>a:hover{background-color: #00f;}
+        .visual{height: 300px;background-color: pink;padding: 10px 0;margin-bottom: 20px;}
+        .container{width: 1000px;height: 300px;
+            /* background-color: #ff0; */
+            margin: 0 auto;position: relative;}
+        .container>div{position: absolute;}
+        .container>div.box1{width: 200px;height: 150px;background-color: #f00;
+            top: 50%;margin-top: -75px;}
+        .container>div.box2{width: 300px;height: 200px;background-color: #0f0;
+            right: 20px;bottom: 0;}
+        
+        section.section{width: 1000px;height: 300px;margin: 0 auto;}
+        section.section li{float: left;width: 231.25px;margin-right: 25px;}
+        section.section li:last-child{margin: 0;}
+        section.section img{width: 100%;}
+        section.section h3{text-align: center;margin-bottom: 20px;}
+        section.section p{text-align: center;margin-bottom: 20px;}
+
+        .sec1st{padding: 30px 0 30px 0}
+        section.section1{width: 1000px;height: 300px;margin: 0 auto;}
+        section.section1 li{float: left;width: 316.66px;margin-right: 25px;}
+        section.section1 li:last-child{margin: 0;}
+        section.section1 img{width: 100%;display: block;}
+        
+        section.section h3{text-align: center;}
+        section.section h3::after
+        
+
+        footer#footerwrap>div.footer{width: 1000px;margin: 0 auto;}
+        div.footer>h2{width: 200px;height: 200px;float: left;}
+        div.footer>address{float: left;width: 800px;font-style: normal;}
+
+
+
+        .bgyellow{background-color: yellow !important;}
+        .bgblue{background-color: blue !important;}
+        .bggray{background-color: #eee !important;}
+
+        .pt30{padding-top: 30px !important;}
+        .pb30{padding-bottom: 30px !important;}
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1><a href="#">LOGO</a></h1>
+        <nav class="gnb">
+        <ul class="clearfix">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">COMPANY</a></li>
+            <li><a href="#">product</a></li>
+            <li><a href="#">online</a></li>
+            <li><a href="#">communite</a></li>
+        </ul>
+        </nav>
+    </header>
+    <!-- visual area stert -->
+    <div class="visual">
+        <div class="container bgyellow">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+    </div>
+    <!-- visual area end -->
+
+    <!-- section aera stert-->
+    <section class="section pt30 pb30">
+        <h3>callery</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quos?</p>
+        <ul class="clearfix">
+            <li><img src="../images/testimg.jpg" alt=""></li>
+            <li><img src="../images/testimg.jpg" alt=""></li>
+            <li><img src="../images/testimg.jpg" alt=""></li>
+            <li><img src="../images/testimg.jpg" alt=""></li>
+        </ul>
+    </section>
+    <div class = "bggray pt30 pb30">
+    <section class="section1">
+        <ul class="clearfix">
+            <li><img src="../images/testimg.jpg" alt=""></li>
+            <li><img src="../images/testimg.jpg" alt=""></li>
+            <li><img src="../images/testimg.jpg" alt=""></li>
+        </ul>
+
+    </section>
+    </div>
+    <!-- section aera end-->
+    <foter id="foterwrap" class="bggray pt30 pb30">
+        <div class="footer clearfix">
+            <h2>LOGO</h2>
+            <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, deleniti.</address>
+        </div>
+    </foter>
+
+</body>
+</html>
